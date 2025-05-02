@@ -16,6 +16,15 @@ class Sword(Equipment):
         super().equip(object_reference)
         object_reference.atk += 10 * level
         object_reference.inventory[0] = "Ben Xing"
+
+class Hands(Equipment):
+    def __init__(self, name, type, level, attr):
+        super().__init__(name, type, level, attr)
+
+    def equip(self, object_reference, level):
+        super().equip(object_reference)
+        object_reference.atk += 1 * level
+        object_reference.inventory[0] = "Hands"
     
     
     
